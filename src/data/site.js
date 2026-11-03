@@ -1,4 +1,3 @@
-// EDIT THIS FILE to change website text. No coding needed.
 export const site = {
   name: "GamersHubIndia",
   tagline: "BY OGSuperio",
