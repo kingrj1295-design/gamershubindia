@@ -26,7 +26,7 @@ export const about = {
 
 // Status values: "Available" | "In Development" | "Coming Soon". Statuses are placeholders: set the real ones.
 export const products = [
-  { name: "GHI GameLauncher", status: "Coming Soon", icon: "L", desc: "One launcher for your games.", features: ["Feature list to be added"], download: "" },
+  { name: "GHI GameLauncher", status: "Available", icon: "/logo/ghilauncher-logo.png", desc: "One launcher for your games.", features: ["Game Library , Auto scan games , Inbuilt spotify control , custom theme and wallpaper , etc "], download: "https://github.com/kingrj1295-design/GHI-Launcher/releases/download/v2.0.0/GHISetup.exe" },
 ];
 
 // DEMO DATA: placeholder content only. Not real games, news or posts.

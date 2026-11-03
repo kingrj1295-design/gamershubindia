@@ -8,7 +8,14 @@ export default function Products() {
       <div className="grid">
         {products.map((p) => (
           <article className="card" key={p.name}>
-            <div className="row"><span className="mark">{p.icon}</span><span className={cls(p.status)}>{p.status}</span></div>
+            <div className="row">
+              <img
+                src={p.icon}
+                alt={`${p.name} logo`}
+                className="product-icon"
+              />
+              <span className={cls(p.status)}>{p.status}</span>
+            </div>
             <h2>{p.name}</h2>
             <p>{p.desc}</p>
             <ul>{p.features.map((f) => <li key={f}>{f}</li>)}</ul>

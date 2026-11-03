@@ -54,3 +54,9 @@ a.card:hover{border-color:var(--blue)}
  .links.open{display:flex}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+.product-icon {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  border-radius: 12px;
+}
