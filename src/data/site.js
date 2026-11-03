@@ -3,7 +3,7 @@ export const site = {
   name: "GamersHubIndia",
   tagline: "BY OGSuperio",
   discordUrl: "https://discord.gg/ZfuwZeBhcj", // paste your Discord invite link here; empty = button hidden
-  contactEmail: "kingrj1295@gmail.com", // paste your contact email here
+  contactEmail: "", // paste your contact email here
 };
 
 export const nav = [
@@ -18,8 +18,8 @@ export const nav = [
 
 // Your own text. Replace when you are ready.
 export const about = {
-  who: "OGSuperio a 15 year old boy real name Manas Giri Goswami is a passionate gamer and developer who created GamersHubIndia to help Indian gamers discover games, check their PC compatibility, and connect with each other.",
-  why: "Add why you created GamersHubIndia here.",
+  who: "OGSuperio real name Manas Giri Goswami is a passionate gamer and developer who created GamersHubIndia to help Indian gamers discover games, check their PC compatibility, and connect with each other.",
+  why: "To solve gamers problems that I also have faced ",
   vision: "One place where Indian gamers discover games, check their PC, and meet each other.",
   mission: "Make PC and console gaming easier to explore, with honest and clearly sourced information.",
   goals: ["Game Library with real data", "Can My PC Run It?", "Community", "Our own gaming apps"],
