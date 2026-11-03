@@ -27,10 +27,7 @@ export const about = {
 
 // Status values: "Available" | "In Development" | "Coming Soon". Statuses are placeholders: set the real ones.
 export const products = [
-  { name: "OGSuperio Game Launcher", status: "Coming Soon", icon: "L", desc: "One launcher for your games.", features: ["Feature list to be added"], download: "" },
-  { name: "RigScore", status: "Coming Soon", icon: "R", desc: "Score your PC and see how it ranks.", features: ["Feature list to be added"], download: "" },
-  { name: "GameScout", status: "Coming Soon", icon: "G", desc: "Find your next game faster.", features: ["Feature list to be added"], download: "" },
-  { name: "PatchPulse", status: "Coming Soon", icon: "P", desc: "Stay updated on game patches.", features: ["Feature list to be added"], download: "" },
+  { name: "GHI GameLauncher", status: "Coming Soon", icon: "L", desc: "One launcher for your games.", features: ["Feature list to be added"], download: "" },
 ];
 
 // DEMO DATA: placeholder content only. Not real games, news or posts.
