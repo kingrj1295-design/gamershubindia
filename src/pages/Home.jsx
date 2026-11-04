@@ -46,7 +46,14 @@ export default function Home() {
         <div className="grid">
           {products.map((p) => (
             <Link to="/products" className="card" key={p.name}>
-              <div className="row between"><span className="mark">{p.icon}</span><span className="tag">{p.status}</span></div>
+              <div className="row between">
+                <img
+                  src={p.icon}
+                  alt={`${p.name} logo`}
+                  className="product-icon"
+                />
+                <span className="tag">{p.status}</span>
+              </div>
               <h3>{p.name}</h3><p className="muted">{p.desc}</p>
             </Link>
           ))}
