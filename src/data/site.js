@@ -8,6 +8,7 @@ export const site = {
 export const nav = [
   { to: "/", label: "Home" },
   { to: "/games", label: "Games" },
+  { to: "/pc-checker", label: "PC Checker" },
   { to: "/community", label: "Community" },
   { to: "/products", label: "Products" },
   { to: "/news", label: "News" },

@@ -1,0 +1,58 @@
+/* PC checker styles. Uses the site's existing colour variables from styles.css. */
+.pcx h1 { margin-bottom: .4rem; }
+.pcx h2 { font-size: 1.15rem; margin-bottom: .9rem; }
+.pcx-lead { max-width: 62ch; margin-bottom: 1.5rem; }
+.pcx-top { display: grid; gap: 1rem; grid-template-columns: 1fr 1fr; align-items: start; }
+.pcx-results { margin-top: 2rem; scroll-margin-top: 80px; }
+.pcx-small { font-size: .85rem; }
+.pcx-label, .pcx-field label { display: block; font-size: .9rem; font-weight: 500; margin-bottom: .3rem; }
+.pcx input[type="text"], .pcx input[type="number"], .pcx input[type="search"], .pcx select {
+  width: 100%; min-height: 44px; padding: .55rem .7rem; color: var(--text); background: var(--bg);
+  border: 1px solid var(--line); border-radius: 10px; font: inherit;
+}
+.pcx input:focus, .pcx select:focus { outline: 2px solid var(--cyan); outline-offset: 1px; border-color: var(--cyan); }
+.pcx [aria-invalid="true"] { border-color: #f87171; }
+.pcx-form fieldset { border: 1px solid var(--line); border-radius: var(--r); margin: 0 0 1rem; padding: .9rem 1rem 1rem; min-width: 0; }
+.pcx-form legend { padding: 0 .4rem; color: var(--cyan); font-weight: 700; font-size: .9rem; }
+.pcx-grid { display: grid; gap: .8rem; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); }
+.pcx-field small { display: block; margin-top: .25rem; font-size: .78rem; }
+.pcx-error { color: #f87171; }
+.pcx-radios { display: flex; gap: 1rem; min-height: 44px; align-items: center; }
+.pcx-radio { display: flex; gap: .4rem; align-items: center; margin: 0; cursor: pointer; }
+.pcx-summary { margin: 0 0 1rem; }
+.pcx-summary div { display: flex; justify-content: space-between; gap: 1rem; padding: .55rem 0; border-top: 1px solid var(--line); }
+.pcx-summary dt { color: var(--muted); } .pcx-summary dd { margin: 0; text-align: right; }
+.pcx-games { list-style: none; margin: .8rem 0 0; padding: 0; display: grid; gap: .5rem; max-height: 420px; overflow: auto; }
+.pcx-game { width: 100%; display: flex; align-items: center; gap: .7rem; padding: .5rem; text-align: left; color: var(--text); background: var(--bg); border: 1px solid var(--line); border-radius: 10px; font: inherit; cursor: pointer; transition: border-color .2s; }
+.pcx-game:hover { border-color: var(--blue); }
+.pcx-game.active { border-color: var(--cyan); background: rgba(34, 211, 238, .06); }
+.pcx-game img { border-radius: 6px; flex: none; height: auto; }
+.pcx-game-title { flex: 1; font-weight: 500; }
+.pcx-banner { border: 1px solid var(--line); border-radius: var(--r); padding: 1.25rem; margin-bottom: 1rem; animation: pcx-in .3s ease both; }
+.pcx-banner h2 { font-size: 1.6rem; margin: 0 0 .4rem; }
+.pcx-banner p { margin: 0 0 .4rem; }
+.pcx-kicker { color: var(--muted); font-size: .85rem; }
+.pcx-b-great { border-color: #34d399; background: rgba(52, 211, 153, .08); }
+.pcx-b-ok { border-color: var(--cyan); background: rgba(34, 211, 238, .07); }
+.pcx-b-bad { border-color: #f87171; background: rgba(248, 113, 113, .08); }
+.pcx-b-warn { border-color: #fbbf24; background: rgba(251, 191, 36, .07); }
+.pcx-b-partial { border-color: var(--purple); background: rgba(139, 92, 246, .08); }
+.pcx-improve { border-color: var(--purple); margin-bottom: 1rem; }
+.pcx-improve ul { margin: 0 0 .8rem; padding-left: 1.1rem; }
+.pcx-fail { border-color: #f87171; margin-bottom: 1rem; }
+.pcx-fail ul { margin: 0; padding-left: 1.1rem; }
+.pcx-comps { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); margin-bottom: 1rem; }
+.pcx-comp h3 { margin-bottom: .6rem; }
+.pcx-tier { padding: .6rem 0; border-top: 1px solid var(--line); }
+.pcx-tier dl { margin: .4rem 0 0; }
+.pcx-tier dl div { display: flex; justify-content: space-between; gap: 1rem; font-size: .9rem; }
+.pcx-tier dt { color: var(--muted); } .pcx-tier dd { margin: 0; text-align: right; overflow-wrap: anywhere; }
+.pcx-badge { font-size: .78rem; padding: .1rem .55rem; border-radius: 99px; border: 1px solid var(--line); white-space: nowrap; }
+.pcx-meets { color: #34d399; border-color: #34d399; }
+.pcx-below { color: #f87171; border-color: #f87171; }
+.pcx-unknown { color: #fbbf24; border-color: #fbbf24; }
+.pcx-unavailable, .pcx-missing { color: var(--muted); }
+.pcx-meta p { margin: 0 0 .7rem; }
+@keyframes pcx-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+@media (max-width: 900px) { .pcx-top { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) { .pcx-banner { animation: none; } }
