@@ -8,6 +8,7 @@ import Products from "./pages/Products.jsx";
 import GameLibrary from "./pages/GameLibrary.jsx";
 import ComingSoon from "./pages/ComingSoon.jsx";
 import GameDetail from "./pages/GameDetail.jsx";
+import PcChecker from "./pages/PcChecker.jsx";
 
 export default function App() {
   const { pathname } = useLocation();
@@ -24,6 +25,7 @@ export default function App() {
           <Route path="/products" element={<Products />} />
           <Route path="/games" element={<GameLibrary />} />
           <Route path="/games/:slug" element={<GameDetail />} />
+          <Route path="/pc-checker" element={<PcChecker />} />
           <Route path="/community" element={<ComingSoon title="Community" phase="Phase 5" />} />
           <Route path="/news" element={<ComingSoon title="Gaming News" phase="Phase 6" />} />
           <Route path="/help" element={<ComingSoon title="Help & Support" phase="Phase 6" />} />
